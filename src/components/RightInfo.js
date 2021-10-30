@@ -15,7 +15,7 @@ export const LeftInfo = () => {
        dispatch(fetchWeatherAction('tashkent'))     
     }, [])
 
-    const imgUrl = 'http://openweathermap.org/img/wn/'
+    const imgUrl = 'https://openweathermap.org/img/wn/'
 
     const state = useSelector(state => state.weather)
     const degree = state && Math.ceil(state.main.temp)
