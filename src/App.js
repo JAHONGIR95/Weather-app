@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { fetchWeatherAction } from './redux/slices/weatherSlices'
+import './assets/styles/app.css'
+import { MainContainer } from './container/MainContainer'
+
 
 function App() {
     const dispatch = useDispatch()
     useEffect(() => {
-       dispatch(fetchWeatherAction('tashkent'))
+       dispatch(fetchWeatherAction())
     }, [])
 
-    const state = useSelector(state => state)
-    console.log(state);
     return (
-        <div>
-            <h1>weather app</h1>
+        <div className="app">
+            <div className="container"> 
+                <MainContainer />
+            </div>
         </div>
     )
 }
