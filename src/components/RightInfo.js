@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchWeatherAction } from '../redux/slices/weatherSlices'
-
+import WeatherIcons from './WeatherIcons'
 
 export const LeftInfo = () => {
     // current time function
@@ -21,7 +21,7 @@ export const LeftInfo = () => {
     const degree = state && Math.ceil(state.main.temp)
     const city = state && state.name
     const desc =  state && state.weather[0].main
-    const icon = state && state.weather[0].icon
+    // const icon = state && state.weather[0].icon
 
     return (
         <div className="right-info">
@@ -35,7 +35,7 @@ export const LeftInfo = () => {
                 </div>
             </div>
             <div className="info-desc">
-                <img className="desc-icon" src={`${imgUrl}${icon}@2x.png`} alt={desc} />
+                <img className="desc-icon" src={WeatherIcons(desc)} alt={desc} />
                 <p className="desc">{desc}</p>
             </div>
         </div>

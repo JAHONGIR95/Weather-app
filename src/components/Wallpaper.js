@@ -8,25 +8,25 @@ import newcloud2 from "../assets/images/newcloud2.jpg"
 
 const wallpaper = (theme) => {
   switch (theme) {
-    case "clear sky":
+    case "Clear":
       return clearsky2
-    case "few clouds":
+    case "Few clouds":
       return newcloud;
-    case "scattered clouds":
+    case "Scattered clouds":
       return newcloud;
-    case "broken clouds":
+    case "Clouds":
       return newcloud2;
-    case "overcast clouds":
+    case "Overcast clouds":
     return newcloud2;
-    case "shower rain":
+    case "Shower rain":
       return lightrain;
-    case "rain":
+    case "Rain":
       return lightrain;
-    case "thanderstorm":
+    case "Thanderstorm":
       return thanderstorm
-    case "mist":
+    case "Mist":
       return mist;
-    case "snow":
+    case "Snow":
         return snow;
     default:
       return newcloud2;

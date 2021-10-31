@@ -65,20 +65,20 @@ img{
 /* left info js */
 .right-info{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     color: #fff;
 }
 
 .info-top{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .degree{
     font-size: 80px;
     position: relative;
     margin-right: 50px;
-    /* top: 15px; */
+    top: 15px;
 }
 
 .degree sup {
@@ -90,7 +90,7 @@ img{
 .info-mid{
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .city-name{
@@ -111,6 +111,7 @@ img{
 .desc-icon{
     width: 50px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .desc{
@@ -308,16 +309,17 @@ img{
 
     .right-info{
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .info-desc{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .input-bar{
-        padding: 0 40px;
+        padding: 0 10px 0 20px;
         margin-bottom: 30px;
-        background-color: rgba(255, 255, 255, 0.488);
+        background-color: rgba(255, 255, 255, 0.588);
     }
 
     .cities{
