@@ -295,7 +295,7 @@ img{
         min-height: 80vh;
     }
     .left-title{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .img-wrapper{
@@ -317,7 +317,7 @@ img{
     .input-bar{
         padding: 0 40px;
         margin-bottom: 30px;
-        background-color: rgba(255, 255, 255, 0.288);
+        background-color: rgba(255, 255, 255, 0.488);
     }
 
     .cities{
@@ -344,6 +344,12 @@ img{
 
     .form-input{
         border-bottom: none;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .form-input::placeholder{
+        color: #fff;
     }
 
 }

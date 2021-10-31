@@ -18,8 +18,10 @@ export const Left = () => {
     return (
         <div className="left" style={ desc === 'clear sky' ? { background: 'rgb(34,110,200)',
             background: 'linear-gradient(180deg, rgba(34,110,200,1) 0%, rgba(102,157,196,0.8421743697478992) 76%, rgba(0,212,255,1) 100%)'} : { backgroundImage:`url(${wallpaper(desc)})`, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
-            <p className="left-title">the.weather</p>
-            <div className="mobile-top"><InputBar /></div>
+            <div className="mobile-wrap">
+                <p className="left-title">the.weather</p>
+                <div className="mobile-top"><InputBar /></div>
+            </div>
             <div className="img-wrapper">
                 <img className="image" src={desc === 'clear sky' && balloon} alt="" />
             </div>
